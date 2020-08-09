@@ -8,18 +8,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <body >
-    <h1 style="text-align: center;margin-top:5%;">Quiz App</h1>
-    <div>Score</div>
+    <h1 style="text-align: center;margin-top:5%;color:rebeccapurple">Quiz App</h1>
+    
     <div class="container main">
+        <div id="score" style="text-align: right !important;font-weight:900;font-size:larger">Score 0/6</div>
         <div style="font-size:x-large" class="row">
-            <div id="ques" class="ques">Answer the question</div><br><br>
-            <div id="option-1"  class="option"><input id="opt-1" name="opt" type="radio">  hello</div>
-            <div id="option-2"  class="option"><input id="opt-2" name="opt" type="radio">  hiii</div>
-            <div id="option-3"  class="option"><input id="opt-3" name="opt" type="radio">  how are u</div>
-            <div id="option-4"  class="option"><input id="opt-4" name="opt" type="radio">  what are u doing</div>
+            ~ &nbsp;<div id="ques" class="ques">Headquarters of UNO are situated at?</div><br><br>
+            <div id="option-1"  class="option"><input id="opt-1" name="opt" type="radio">   New York,USA</div>
+            <div id="option-2"  class="option"><input id="opt-2" name="opt" type="radio">   Geneva</div>
+            <div id="option-3"  class="option"><input id="opt-3" name="opt" type="radio">   Hague (Netherlands)</div>
+            <div id="option-4"  class="option"><input id="opt-4" name="opt" type="radio">   Paris</div>
         </div>
-        <br><div><button onclick="Check()">Check</button></div><br>
-        <div><button onclick="Next()">Next</button></div>
+        <br><div><button onclick="Check()"><b> Check</b>  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg></button></div><br>
+        <div><button onclick="Next()"><b>Next</b>   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+          </svg></button></div>
     </div>
 
     
