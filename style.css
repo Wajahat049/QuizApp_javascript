@@ -1,8 +1,12 @@
 .main{
     margin-top: 5%;
     padding: 5%;
+    background-color: lightskyblue;
 }
 
 .option{
     width: 80%;
+}
+body{
+    background-color: lightsalmon;
 }
